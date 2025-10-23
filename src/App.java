@@ -9,9 +9,7 @@ public class App {
 		{
 			try {
 				int n = Integer.parseInt(System.console().readLine());
-				//n < 0 ? positivos++ : negativos++; //???????????????????????
-				if (n < 0) negativos++;
-				else positivos++;
+				int foo = n < 0 ? positivos++ : negativos++;
 			}
 			catch (NumberFormatException e) {
 				System.out.println("Por favor, introduce un número entero");
